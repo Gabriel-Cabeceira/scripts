@@ -1,0 +1,316 @@
+@import url(reset.css);
+
+body {
+    background-color: #1b001d;
+}
+
+/*Configurações do fundo*/
+#content {
+    height: 70em;
+    background: fixed url('../img/wallpaper-js.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Configurações do header*/
+#header {
+    height: 150px;
+    width: 100%;
+    background-color: #000129;
+    border-bottom: 1px solid #24bdff;
+    display: flex;
+    justify-content: right;
+}
+
+/*Box da Logo*/
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 25vw;
+}
+
+/*Box dos formulários dos scripts*/
+#box-forms-scripts {
+    width: 65vw;
+    min-height: 18em;
+    position: relative;
+    top: -4em;
+    left: 5em;
+    background-color: #ececec;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Box onde os scripts são disponibilizados*/
+#box-scripts {
+    width: 65vw;
+    min-height: 25em;
+    position: relative;
+    left: 5em;
+    background-color: #ececec;
+    border-radius: 3px;
+}
+
+#box-scripts #wrap {
+    max-width: 60vw;
+    white-space: pre-wrap;
+    background-color: red;
+}
+
+/*Configurações da barra lateral principal*/
+#nav-bar {
+    width: 25vw;
+    height: 100vh;
+    position: absolute;
+    top: 120px;
+    right: 0;
+    text-align: center;
+    font-size: 1em;
+}
+
+/*Configurações da box da lista de elementos da navegação*/
+#aside {
+    margin-top: 5em;
+}
+
+/*Configurações dos itens da lista de navegação*/
+.list-itens {
+    width: 20vw;
+    height: 2.8vw;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 10px auto;
+    padding: 7px 5px;
+    text-shadow: 1px 0 0 #1f1f1f;
+    border: 1px solid #0073AD;
+    color: #0073AD;
+    background-color: rgba(0, 0, 0, 0.623);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Ao passar o mouse por cima dos botões da barra de navegação*/
+.list-itens:hover {
+    cursor: pointer;
+    color: #24bdff;
+    text-shadow: 0 0 8px #24bdff;
+    border-color: #24bdff;
+}
+
+/*Configurações do footer*/
+#footer {
+    height: 130px;
+    width: 100%;
+    /* bottom: 0; */
+    background-color: #000129;
+    border-top: 1px solid #24bdff;
+}
+
+
+
+/*-------------------- Configurações dos formulários --------------------*/
+
+.div-form-flex {
+    display: flex;
+    justify-content: center;
+}
+
+/*Configuração da Box de Saudações*/
+#salutation {
+    width: 64vw;
+}
+
+#salutation h1 {
+    margin: 15px;
+    text-align: center;
+}
+
+/*Configuração da Box de Escalonamento*/
+#escalation {
+    width: 64vw;
+}
+
+#escalation h1 {
+    margin: 15px;
+    text-align: center;
+}
+
+/*Configuração da Box de Agendamento no Trello*/
+#trello-schedule-update {
+    width: 64vw;
+}
+
+#trello-schedule-update h1 {
+    margin: 15px;
+    text-align: center;
+}
+
+#trello-schedule-update input {
+    width: 17em;
+    height: 1.5em;
+}
+
+#div-form-trello {
+    display: flex;
+    width: 50em;
+    flex-wrap: wrap;
+}
+
+#register-information {
+    width: 64vw;
+}
+
+#register-information h1 {
+    margin: 15px;
+    text-align: center;
+}
+
+#register-information input {
+    width: 17em;
+    height: 1.5em;
+}
+
+#div-form-r-info {
+    display: flex;
+    width: 50em;
+    flex-wrap: wrap;
+}
+
+#div-form-r-info textarea{
+    resize: both;
+    width: 17em;
+    height: 1.5em;
+    max-height: 290px;
+    max-width: 330px;
+}
+
+#ehz h1 {
+    text-align: center;
+    padding: 1vw;
+}
+
+#div-form-ehz textarea {
+    min-width: 355px;
+    resize: vertical;
+    max-height: 100px;
+}
+
+#message-test h1 {
+    text-align: center;
+    padding: 1vw;
+}
+
+#message-test #obs {
+    padding: 2vw;
+}
+
+/*-------------------- Configurações dos inputs dos formulários --------------------*/
+
+#div-form-1 {
+    width: 20em;
+    height: 12em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#div-buttons-1 {
+    width: 20em;
+    height: 12em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Botões do formulário de Saudação*/
+.btn {
+    height: 2em;
+    width: 10em;
+    margin: 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    box-shadow: 0 0 3px black;
+    text-shadow: 0 2px 8px #797979;
+    background-color: #dddddd;
+
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+/*botão de gerar scripts*/
+#generate-script {
+    border: 1px solid #46c700;
+    
+}
+
+#generate-script:hover {
+    border: 1px solid #59ff00;
+    box-shadow: 0 0 10px black; 
+}
+
+/*botão de copiar*/
+#copy {
+    border: 1px solid #e9b600;
+}
+
+#copy:hover {
+    border: 1px solid #ffd22f;
+    box-shadow: 0 0 10px black; 
+}
+
+/*botão de fechar*/
+#close {
+    border: 1px solid #be0000;
+}
+
+#close:hover {
+    border: 1px solid #ff0000;
+    box-shadow: 0 0 10px black; 
+}
+
+/*Configurações das box dos inputs*/
+.div-inputs {
+    margin: 5px;
+}
+
+/*Configurações dos Labels*/
+.labels {
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/*Configurações gerais dos inputs*/
+.forms-inputs {
+    width: 20em;
+    height: 2em;
+    padding-left: 3px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+/*Configuração do paragrafo de scripts*/
+#script-paragraf {
+    width: 55vw;
+    margin: auto;
+    padding: 30px 10px;
+    font-weight: bold;
+}
+
+/*Div para centralizar o botão de copiar*/
+#div-button-copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
