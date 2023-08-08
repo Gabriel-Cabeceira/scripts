@@ -315,7 +315,7 @@ const ehzHtml = `
 
             <div class="div-inputs">
                 <label class="labels" for="name-account">Nome da Conta:</label><br>
-                <input class="forms-inputs" name="name-account" id="name-account" type="number">
+                <input class="forms-inputs" name="name-account" id="name-account" type="text">
             </div>
 
             <div class="div-inputs">
